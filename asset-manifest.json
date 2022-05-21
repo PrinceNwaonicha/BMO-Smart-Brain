@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/BMO-Smart-Brain/static/css/main.55532db2.chunk.css",
+    "main.js": "/BMO-Smart-Brain/static/js/main.b0106515.chunk.js",
+    "main.js.map": "/BMO-Smart-Brain/static/js/main.b0106515.chunk.js.map",
+    "runtime-main.js": "/BMO-Smart-Brain/static/js/runtime-main.c48233fa.js",
+    "runtime-main.js.map": "/BMO-Smart-Brain/static/js/runtime-main.c48233fa.js.map",
+    "static/css/2.6d7c7915.chunk.css": "/BMO-Smart-Brain/static/css/2.6d7c7915.chunk.css",
+    "static/js/2.2e9d3074.chunk.js": "/BMO-Smart-Brain/static/js/2.2e9d3074.chunk.js",
+    "static/js/2.2e9d3074.chunk.js.map": "/BMO-Smart-Brain/static/js/2.2e9d3074.chunk.js.map",
+    "static/js/3.757105e2.chunk.js": "/BMO-Smart-Brain/static/js/3.757105e2.chunk.js",
+    "static/js/3.757105e2.chunk.js.map": "/BMO-Smart-Brain/static/js/3.757105e2.chunk.js.map",
+    "static/js/4.8be2f009.chunk.js": "/BMO-Smart-Brain/static/js/4.8be2f009.chunk.js",
+    "static/js/4.8be2f009.chunk.js.map": "/BMO-Smart-Brain/static/js/4.8be2f009.chunk.js.map",
+    "index.html": "/BMO-Smart-Brain/index.html",
+    "static/css/2.6d7c7915.chunk.css.map": "/BMO-Smart-Brain/static/css/2.6d7c7915.chunk.css.map",
+    "static/css/main.55532db2.chunk.css.map": "/BMO-Smart-Brain/static/css/main.55532db2.chunk.css.map",
+    "static/js/2.2e9d3074.chunk.js.LICENSE.txt": "/BMO-Smart-Brain/static/js/2.2e9d3074.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/BMO-Smart-Brain/static/media/IBMPlexMono-Regular.15b172ce.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c48233fa.js",
+    "static/css/2.6d7c7915.chunk.css",
+    "static/js/2.2e9d3074.chunk.js",
+    "static/css/main.55532db2.chunk.css",
+    "static/js/main.b0106515.chunk.js"
+  ]
+}
