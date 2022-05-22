@@ -1,9 +1,7 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-const JsParticles = () => {
-  const particlesInit = async (main) => {
-    console.log(main);
+const particlesInit = async (main) => {
 
     // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -11,24 +9,24 @@ const JsParticles = () => {
     await loadFull(main);
   };
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+
+ const jParticles = () => {
+  
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
+
       options={{
-        fpsLimit: 60,
-        
+        fpsLimit: 120,
+
         particles: {
           color: {
             value: "#ffffff",
           },
           links: {
             color: "#ffffff",
-            distance: 150,
+            distance: 200,
             enable: true,
             opacity: 0.5,
             width: 1,
@@ -51,7 +49,7 @@ const JsParticles = () => {
               enable: true,
               area: 800,
             },
-              value: 100,
+              value: 30,
           },
           opacity: {
             value: 0.5,
@@ -69,4 +67,4 @@ const JsParticles = () => {
   );
 };
 
-export default JsParticles
+export default jParticles
