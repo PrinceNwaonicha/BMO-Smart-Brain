@@ -21,7 +21,7 @@ const particlesInit = async (main) => {
   };
 
 const app = new Clarifai.App({
-  apiKey: '8df9834385f44153bfa0cee95415a0ba'
+  apiKey: 'something'
 })
 class App extends Component {
   constructor() {
@@ -95,7 +95,7 @@ class App extends Component {
             </div>
           
           : (
-            route === 'signin' || route == 'signout'
+            route === 'signin' || route === 'signout'
               ? <Signin onRouteChange={this.onRouteChange} />
               : <Register onRouteChange={this.onRouteChange} />
           )
