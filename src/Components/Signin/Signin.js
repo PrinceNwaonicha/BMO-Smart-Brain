@@ -18,7 +18,7 @@ class Signin extends React.Component {
     }
 
     onSubmitSignIn = () => {
-        fetch('http://localhost:3000/signin', {
+        fetch('https://morning-earth-38527.herokuapp.com/signin', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -26,7 +26,14 @@ class Signin extends React.Component {
                 password: this.state.signInPassword
             })
         })
-        this.props.onRouteChange('home');
+            .then(response => response.json())
+            .then(user => {
+                if (user.id)//Checks if user exists. 
+                {
+                    this.props.loadUser(user);
+                    this.props.onRouteChange('home');         
+            }
+        })
     }
     render() {
         const { onRouteChange } = this.props;
@@ -54,6 +61,7 @@ class Signin extends React.Component {
                                     name="password"
                                     id="password"
                                     onChange={this.onPasswordChange}
+                                    onKeyDown={(e) => {if (e.code === 'Enter') {return this.onSubmitSignIn() }}}
                                 />
                             </div>
                         </fieldset>
@@ -63,8 +71,6 @@ class Signin extends React.Component {
                                 className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
                                 type="submit"
                                 value="Sign in"
-                                
-
                             />
                         </div>
                         <div className="lh-copy mt3">
